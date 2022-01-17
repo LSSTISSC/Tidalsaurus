@@ -1,6 +1,8 @@
 # Tidalsaurus
 **Detecting Tidal Features to Uncover Galaxy Interactions**
 
+This project will aim to use Contrastive Learning methods to build a semi-supervised approach to the detection of tidal features.
+
 Project lead: [Alice Desmons](https://github.com/alidez)
 
 Supervisors: Sarah Brough, [Francois Lanusse](https://github.com/EiffL)
