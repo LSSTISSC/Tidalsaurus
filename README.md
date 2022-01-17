@@ -1,7 +1,7 @@
 # Tidalsaurus
 **Detecting Tidal Features to Uncover Galaxy Interactions**
 
-Project lead:
+Project lead: [Alice Desmons](https://github.com/alidez)
 
 Supervisors: Sarah Brough, [Francois Lanusse](https://github.com/EiffL)
 
