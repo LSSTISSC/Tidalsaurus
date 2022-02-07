@@ -95,7 +95,8 @@ class HscPhotoz(tfds.core.GeneratorBasedBuilder):
         description=_DESCRIPTION,
         features=tfds.features.FeaturesDict({
     'image': tfds.features.Tensor(shape=(128, 128, 5), dtype=tf.float32),
-    'attrs': {k: tf.float32 for k in _attrs}
+    'attrs': {k: tf.float32 for k in _attrs},
+    'object_id': tf.int32
         }),
         # If there's a common (input, target) tuple from the
         # features, specify them here. They'll be used if
@@ -136,4 +137,5 @@ class HscPhotoz(tfds.core.GeneratorBasedBuilder):
       im = stack_bands(cutout)
 
       yield object_id, {'image': im, 
-                        'attrs':{k: np.asscalar(row[k]) for k in _attrs}}
+                        'attrs':{k: np.asscalar(row[k]) for k in _attrs},
+                        'object_id': np.asscalar(row['object_id']}}
