@@ -101,7 +101,7 @@ class HscTidal(tfds.core.GeneratorBasedBuilder):
         # If there's a common (input, target) tuple from the
         # features, specify them here. They'll be used if
         # `as_supervised=True` in `builder.as_dataset`.
-        supervised_keys=('image', 'attrs/specz_redshift'),
+        supervised_keys=('image'),
         homepage='https://dataset-homepage/',
         citation=_CITATION,
     )
