@@ -27,7 +27,7 @@ This code can be used to load the pre-trained model and reproduce the results of
 ---
 ### Using the Pre-trained Model
 
-First, download the required data and pre-trained model from Zenodo which can be found at [[https://zenodo.org/record/8031041](https://zenodo.org/record/8146225)](https://zenodo.org/record/8031041). This includes the `Datasets` folder containing the unlabelled dataset `Unlabelled_ds` and the tidal feature dataset `Tidal_ds`, the pre-trained encoder folder `Trained_NNCLR_model`, and the pre-trained finetuned classifier folder `Trained_finetuned_classifier`.
+First, download the required data and pre-trained model from Zenodo which can be found at [https://zenodo.org/record/8146225](https://zenodo.org/record/8146225). This includes the `Datasets` folder containing the unlabelled dataset `Unlabelled_ds` and the tidal feature dataset `Tidal_ds`, the pre-trained encoder folder `Trained_NNCLR_model`, and the pre-trained finetuned classifier folder `Trained_finetuned_classifier`.
 
 **model_testing.py** contains code to assemble these datasets and load the pre-trained model. It will apply the model to the test dataset and generate TPR, FPR and Threshold arrays as well as a ROC curve which will all be saved to a chosen location. The variables `dataset_path`, `NNCLR_load_path`, `Classifier_load_path`, and `save_path` will need to be edited to match your system setup and file structure.
 
